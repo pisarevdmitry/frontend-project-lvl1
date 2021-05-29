@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://github.com/pisarevdmitry/frontend-project-lvl1.git"
   },
+  "bin" : {
+    "brain-games" : "bin/brain-games.js"
+  },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "bugs": {
