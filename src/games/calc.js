@@ -9,8 +9,8 @@ const operations = {
 };
 
 const calc = () => {
-  const firstNumber = genRandom(0, 500);
-  const secondNumber = genRandom(0, 500);
+  const firstNumber = genRandom(0, 50);
+  const secondNumber = genRandom(0, 50);
   const operationKeys = Object.keys(operations);
   const operation = operationKeys[genRandom(0, operationKeys.length - 1)];
   const question = `${firstNumber} ${operation} ${secondNumber}`;
