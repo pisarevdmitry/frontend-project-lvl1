@@ -1,4 +1,4 @@
-import genRandom from './helpers.js';
+import genRandom from '../helpers.js';
 
 export const msg = 'Answer "yes" if the number is even, otherwise answer "no".';
 

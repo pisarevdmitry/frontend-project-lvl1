@@ -1,4 +1,4 @@
-import genRandom from './helpers.js';
+import genRandom from '../helpers.js';
 
 export const msg = 'What is the result of the expression?';
 
