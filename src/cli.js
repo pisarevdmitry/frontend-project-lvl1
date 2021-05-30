@@ -1,8 +1,9 @@
-import readLineSync from 'readline-sync';
+import askQuestion from './console.js';
 
 const welcome = () => {
-  const userName = readLineSync.question('May I have your name? ');
+  const userName = askQuestion('May I have your name? ');
   console.log(`Hello, ${userName}!`);
+  return userName;
 };
 
 export default welcome;
