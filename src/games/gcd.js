@@ -1,6 +1,6 @@
 import genRandom from '../helpers.js';
 
-export const msg = 'Find the greatest common divisor of given numbers.?';
+const msg = 'Find the greatest common divisor of given numbers.?';
 
 const findGcd = (num1, num2) => {
   const iter = (number1, number2) => {
@@ -26,4 +26,7 @@ const gcd = () => {
   };
 };
 
-export default gcd;
+export default {
+  starMsg: msg,
+  gameQuestion: gcd,
+};

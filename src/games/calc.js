@@ -1,6 +1,6 @@
 import genRandom from '../helpers.js';
 
-export const msg = 'What is the result of the expression?';
+const msg = 'What is the result of the expression?';
 
 const operations = {
   '+': (a, b) => a + b,
@@ -22,4 +22,7 @@ const calc = () => {
   };
 };
 
-export default calc;
+export default {
+  starMsg: msg,
+  gameQuestion: calc,
+};

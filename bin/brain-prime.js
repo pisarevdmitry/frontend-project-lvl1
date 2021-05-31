@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-
 import game from '../src/index.js';
-import even from '../src/games/even.js';
+import prime from '../src/games/prime.js';
 
-game(even);
+game(prime);

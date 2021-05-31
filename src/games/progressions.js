@@ -1,12 +1,12 @@
 import genRandom from '../helpers.js';
 
-export const msg = 'Find the greatest common divisor of given numbers.?';
+const msg = 'Find the greatest common divisor of given numbers.?';
 
 const generateProgression = (start, step) => {
   const result = [start];
-  for (let i = 1, temp = start; i < 10; i += 1) {
-    temp += step;
-    result.push(temp);
+  for (let i = 1, current = start; i < 10; i += 1) {
+    current += step;
+    result.push(current);
   }
   return result;
 };
@@ -25,4 +25,7 @@ const progressions = () => {
   };
 };
 
-export default progressions;
+export default {
+  starMsg: msg,
+  gameQuestion: progressions,
+};

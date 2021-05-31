@@ -1,7 +1,7 @@
 import welcome from './cli.js';
 import ask, { write } from './console.js';
 
-const game = (starMsg, gameQuestion) => {
+const game = ({ starMsg, gameQuestion }) => {
   const user = welcome();
   let correctAnswers = 0;
   let question;
@@ -11,6 +11,7 @@ const game = (starMsg, gameQuestion) => {
   let check;
 
   write(starMsg);
+
   while (correctAnswers < 3) {
     ({ question, getAnswer, check } = gameQuestion());
     write(`Question: ${question}`);
@@ -25,6 +26,7 @@ const game = (starMsg, gameQuestion) => {
     write('Correct!');
     correctAnswers += 1;
   }
+
   write(`Congratulations, ${user}!`);
 };
 
