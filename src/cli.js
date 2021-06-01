@@ -1,12 +1,6 @@
-import askQuestion from './console.js';
+import readLineSync from 'readline-sync';
 
-const welcome = () => {
-  let userName;
-  while (!userName) {
-    userName = askQuestion('May I have your name? ');
-  }
+export default () => {
+  const userName = readLineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  return userName;
 };
-
-export default welcome;

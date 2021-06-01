@@ -14,10 +14,11 @@ const calc = () => {
   const operationKeys = Object.keys(operations);
   const operation = operationKeys[genRandom(0, operationKeys.length - 1)];
   const question = `${firstNumber} ${operation} ${secondNumber}`;
+  const answer = operations[operation](firstNumber, secondNumber);
 
   return {
     question,
-    getAnswer: () => operations[operation](firstNumber, secondNumber),
+    getAnswer: answer,
     check: (userAnswer, correctAnswer) => Number(userAnswer) === correctAnswer,
   };
 };

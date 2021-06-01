@@ -19,7 +19,7 @@ const prime = () => {
   const question = `${number}`;
   return {
     question,
-    getAnswer: () => (isPrime(number) ? 'yes' : 'no'),
+    getAnswer: isPrime(number) ? 'yes' : 'no',
     check: (userAnswer, correctAnswer) => userAnswer === correctAnswer,
   };
 };

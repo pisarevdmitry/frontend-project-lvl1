@@ -6,7 +6,7 @@ const brainEven = () => {
   const question = genRandom(1, 100);
   return {
     question,
-    getAnswer: () => (question % 2 === 0 ? 'yes' : 'no'),
+    getAnswer: question % 2 === 0 ? 'yes' : 'no',
     check: (userAnswer, correctAnswer) => userAnswer === correctAnswer,
   };
 };

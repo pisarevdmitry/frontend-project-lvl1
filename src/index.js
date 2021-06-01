@@ -1,33 +1,25 @@
-import welcome from './cli.js';
-import ask, { write } from './console.js';
+import readLineSync from 'readline-sync';
 
 const game = ({ starMsg, gameQuestion }) => {
-  const user = welcome();
-  let correctAnswers = 0;
-  let question;
-  let userAnswer;
-  let correctAnswer;
-  let getAnswer;
-  let check;
+  const userName = readLineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
+  console.log(starMsg);
 
-  write(starMsg);
+  for (let correctAnswers = 0; correctAnswers < 3; correctAnswers += 1) {
+    const { question, getAnswer: correctAnswer, check } = gameQuestion();
+    console.log(`Question: ${question}`);
+    const userAnswer = readLineSync.question('Your answer: ');
 
-  while (correctAnswers < 3) {
-    ({ question, getAnswer, check } = gameQuestion());
-    write(`Question: ${question}`);
-    userAnswer = ask('Your answer: ');
-    correctAnswer = getAnswer(userAnswer);
     if (!check(userAnswer, correctAnswer)) {
-      write(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
-      write(`Let's try again, ${user}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${userName}!`);
       return;
     }
 
-    write('Correct!');
-    correctAnswers += 1;
+    console.log('Correct!');
   }
 
-  write(`Congratulations, ${user}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default game;

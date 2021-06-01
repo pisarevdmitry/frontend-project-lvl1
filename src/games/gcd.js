@@ -18,10 +18,11 @@ const gcd = () => {
   const firstNumber = genRandom(1, 100);
   const secondNumber = genRandom(1, 100);
   const question = `${firstNumber} ${secondNumber}`;
+  const answer = findGcd(firstNumber, secondNumber);
 
   return {
     question,
-    getAnswer: () => findGcd(firstNumber, secondNumber),
+    getAnswer: answer,
     check: (userAnswer, correctAnswer) => Number(userAnswer) === correctAnswer,
   };
 };
