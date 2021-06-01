@@ -3,6 +3,8 @@ import genRandom from '../helpers.js';
 const msg = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (number) => {
+  if (number < 2) return false;
+
   const iter = (divisor) => {
     if (divisor > number / 2) return true;
     if (number % divisor === 0) return false;
