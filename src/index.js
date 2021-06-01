@@ -10,7 +10,7 @@ const game = (currentGame) => {
   console.log(starMsg);
 
   for (let correctAnswers = 0; correctAnswers < 3; correctAnswers += 1) {
-    const { question, getAnswer: correctAnswer, check } = gameQuestion();
+    const { question, answer: correctAnswer, check } = gameQuestion();
     console.log(`Question: ${question}`);
     const userAnswer = readLineSync.question('Your answer: ');
 

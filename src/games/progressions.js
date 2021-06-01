@@ -20,7 +20,7 @@ const progressions = () => {
   const question = progression.map((elem, index) => (index === hideIndex ? '..' : elem)).join(' ');
   return {
     question,
-    getAnswer: answer,
+    answer,
     check: (userAnswer, correctAnswer) => Number(userAnswer) === correctAnswer,
   };
 };

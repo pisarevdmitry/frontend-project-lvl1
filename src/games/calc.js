@@ -18,7 +18,7 @@ const calc = () => {
 
   return {
     question,
-    getAnswer: answer,
+    answer,
     check: (userAnswer, correctAnswer) => Number(userAnswer) === correctAnswer,
   };
 };
