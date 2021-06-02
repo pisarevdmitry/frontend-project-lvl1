@@ -16,9 +16,10 @@ const isPrime = (number) => {
 const prime = () => {
   const number = genRandom(1, 100);
   const question = `${number}`;
+  const answer = isPrime(number) ? 'yes' : 'no';
   return {
     question,
-    answer: isPrime(number) ? 'yes' : 'no',
+    answer,
     check: (userAnswer, correctAnswer) => userAnswer === correctAnswer,
   };
 };
