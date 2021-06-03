@@ -20,7 +20,7 @@ const prime = () => {
   return {
     question,
     answer,
-    check: (userAnswer, correctAnswer) => userAnswer === correctAnswer,
+    check: (userAnswer) => userAnswer.toLowerCase() === answer,
   };
 };
 

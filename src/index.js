@@ -14,7 +14,7 @@ const game = (currentGame) => {
     console.log(`Question: ${question}`);
     const userAnswer = readLineSync.question('Your answer: ');
 
-    if (!check(userAnswer, correctAnswer)) {
+    if (!check(userAnswer)) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
       return;

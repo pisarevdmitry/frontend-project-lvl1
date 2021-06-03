@@ -21,7 +21,7 @@ const progressions = () => {
   return {
     question,
     answer,
-    check: (userAnswer, correctAnswer) => Number(userAnswer) === correctAnswer,
+    check: (userAnswer) => Number(userAnswer) === answer,
   };
 };
 
