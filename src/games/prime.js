@@ -13,18 +13,17 @@ const isPrime = (number) => {
   return iter(2);
 };
 
-const prime = () => {
+const createRound = () => {
   const number = genRandom(1, 100);
   const question = `${number}`;
   const answer = isPrime(number) ? 'yes' : 'no';
   return {
     question,
     answer,
-    check: (userAnswer) => userAnswer.toLowerCase() === answer,
   };
 };
 
 export default {
   starMsg: msg,
-  gameQuestion: prime,
+  createRound,
 };

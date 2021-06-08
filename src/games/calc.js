@@ -8,7 +8,7 @@ const operations = {
   '*': (a, b) => a * b,
 };
 
-const calc = () => {
+const createRound = () => {
   const firstNumber = genRandom(0, 50);
   const secondNumber = genRandom(0, 50);
   const operationKeys = Object.keys(operations);
@@ -19,11 +19,10 @@ const calc = () => {
   return {
     question,
     answer,
-    check: (userAnswer) => Number(userAnswer) === answer,
   };
 };
 
 export default {
   starMsg: msg,
-  gameQuestion: calc,
+  createRound,
 };

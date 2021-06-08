@@ -14,7 +14,7 @@ const findGcd = (num1, num2) => {
   return iter(num1, num2);
 };
 
-const gcd = () => {
+const createRound = () => {
   const firstNumber = genRandom(1, 100);
   const secondNumber = genRandom(1, 100);
   const question = `${firstNumber} ${secondNumber}`;
@@ -23,11 +23,10 @@ const gcd = () => {
   return {
     question,
     answer,
-    check: (userAnswer) => Number(userAnswer) === answer,
   };
 };
 
 export default {
   starMsg: msg,
-  gameQuestion: gcd,
+  createRound,
 };
