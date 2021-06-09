@@ -5,13 +5,13 @@
 
 ### Набор пяти консольных игр brain-games;
 
-- brain-even - проверка на четность, пример игры: https://asciinema.org/a/hQZUhJEDawdB8zrfEmjt1Hqm3
-- brain-calc - арифметические операции с числами, пример игры: https://asciinema.org/a/ehN1QAzjC1hP1LsVFHVTMQL0C
+- brain-even - проверка на четность, пример игры:  https://asciinema.org/a/9hKDiabNXQ4opzLEDztpqUy9K
+- brain-calc - арифметические операции с числами, пример игры: https://asciinema.org/a/qA77D4e9jLeObwf0wHE3ZdJrO
 - brain-gcd - нахождение наибольшиго общего делителя 2 чисел,
-пример игры: https://asciinema.org/a/qD85TytHFXCM4ykCJvXAvoHCq
+пример игры:  https://asciinema.org/a/a8E0eIApIJkgUmiDsFU9aYirH
 -  brain-progression - нахождение пропущеного члена арифметической прогрессии,
-  пример игры: https://asciinema.org/a/ccr1lTwb2U9GMkbJdCAMXUJj8
--  brain-prime - проверка на простоту, пример игры: https://asciinema.org/a/Af6RTRgxgQTvZSOuMXQxf7Deu
+  пример игры: https://asciinema.org/a/r0NTyhKhur7kGYvbvIs7AZmAW
+-  brain-prime - проверка на простоту, пример игры: https://asciinema.org/a/lg81UDv7ovSO1QR03HE6Aeuet
 
 Установка:
 - git clone
