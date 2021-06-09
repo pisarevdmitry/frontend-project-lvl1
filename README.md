@@ -3,22 +3,22 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/80886c6eaf3c69c4cbc8/maintainability)](https://codeclimate.com/github/pisarevdmitry/frontend-project-lvl1/maintainability)
 ![example workflow](https://github.com/pisarevdmitry/frontend-project-lvl1/actions/workflows/main.yml/badge.svg) 
 
-### Набор пяти консольных игр brain-games;
+### A set of five console games;
 
-- brain-even - проверка на четность, пример игры:  https://asciinema.org/a/9hKDiabNXQ4opzLEDztpqUy9K
-- brain-calc - арифметические операции с числами, пример игры: https://asciinema.org/a/qA77D4e9jLeObwf0wHE3ZdJrO
-- brain-gcd - нахождение наибольшиго общего делителя 2 чисел,
-пример игры:  https://asciinema.org/a/a8E0eIApIJkgUmiDsFU9aYirH
--  brain-progression - нахождение пропущеного члена арифметической прогрессии,
-  пример игры: https://asciinema.org/a/r0NTyhKhur7kGYvbvIs7AZmAW
--  brain-prime - проверка на простоту, пример игры: https://asciinema.org/a/lg81UDv7ovSO1QR03HE6Aeuet
+- brain-even - parity check, example:  https://asciinema.org/a/9hKDiabNXQ4opzLEDztpqUy9K
+- brain-calc - arithmetic operations with numbers, example: https://asciinema.org/a/qA77D4e9jLeObwf0wHE3ZdJrO
+- brain-gcd - finding the greatest common divisor of 2 numbers,
+example:  https://asciinema.org/a/a8E0eIApIJkgUmiDsFU9aYirH
+-  brain-progression - finding the missing member of an arithmetic progression,
+  example: https://asciinema.org/a/r0NTyhKhur7kGYvbvIs7AZmAW
+-  brain-prime - simplicity check, example: https://asciinema.org/a/lg81UDv7ovSO1QR03HE6Aeuet
 
-Установка:
+Install:
 - git clone
 - make install
 - npm link
 
-Команды для запуска игр:
+Commands:
 - brain-even
 - brain-calc
 - brain-gcd
