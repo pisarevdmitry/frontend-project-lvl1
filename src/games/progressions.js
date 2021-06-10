@@ -20,7 +20,7 @@ const createRound = () => {
   const question = progression.map((elem, index) => (index === hiddenIndex ? '..' : elem)).join(' ');
   return {
     question,
-    answer,
+    answer: String(answer),
   };
 };
 

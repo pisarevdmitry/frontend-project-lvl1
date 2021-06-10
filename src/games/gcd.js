@@ -22,7 +22,7 @@ const createRound = () => {
 
   return {
     question,
-    answer,
+    answer: String(answer),
   };
 };
 

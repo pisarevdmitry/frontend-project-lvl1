@@ -13,7 +13,7 @@ const play = (currentGame) => {
     const { question, answer: correctAnswer } = createRound();
     console.log(`Question: ${question}`);
     const userAnswer = readLineSync.question('Your answer: ');
-    const normalizedAnswer = typeof (correctAnswer) === 'number' ? Number(userAnswer) : userAnswer.toLowerCase();
+    const normalizedAnswer = userAnswer.toLowerCase();
 
     if (normalizedAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
