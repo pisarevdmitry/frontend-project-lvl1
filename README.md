@@ -3,7 +3,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/80886c6eaf3c69c4cbc8/maintainability)](https://codeclimate.com/github/pisarevdmitry/frontend-project-lvl1/maintainability)
 ![example workflow](https://github.com/pisarevdmitry/frontend-project-lvl1/actions/workflows/main.yml/badge.svg) 
 
-### A set of five console games;
+### A set of five console games:
 
 - brain-even - parity check, example:  https://asciinema.org/a/9hKDiabNXQ4opzLEDztpqUy9K
 - brain-calc - arithmetic operations with numbers, example: https://asciinema.org/a/qA77D4e9jLeObwf0wHE3ZdJrO
